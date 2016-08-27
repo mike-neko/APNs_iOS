@@ -43,7 +43,7 @@ class PushSender: NSObject, NSURLSessionDelegate, NSURLSessionDataDelegate {
         //let trust = certEntry["trust"] as! SecTrustRef
         
         clientCredential = NSURLCredential(identity: identity, certificates: certificates, persistence: .ForSession)
-}
+    }
     
     func URLSession(session: NSURLSession, didReceiveChallenge challenge: NSURLAuthenticationChallenge,
                     completionHandler: (NSURLSessionAuthChallengeDisposition, NSURLCredential?) -> Void) {
